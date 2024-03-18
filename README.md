@@ -2,8 +2,8 @@
 # Java Classes
 
 - [ ] Main
-- [X] Register
-- [X] Login
+- [ ] Register
+- [ ] Login
     - [ ] Update error messages
 - [ ] Character
 - [ ] Mission
