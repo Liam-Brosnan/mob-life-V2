@@ -2,14 +2,14 @@
 # Java Classes
 
 - [ ] Main
-- [ ] Register
-- [ ] Login
-    - [ ] Update error messages
-- [ ] Character
+- [X] Register
+- [X] Login
+    - [X] Update error messages
+- [X] Character
 - [ ] Mission
 - [ ] Mission Tracker
 - [ ] Inventory
-- [ ] Item
+- [X] Item
 
 # Group Git Workflow Guide
 
