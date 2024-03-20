@@ -1,14 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
 public class Item {
     protected String itemName;
     protected int itemQuantity;
     protected int itemValue;
 
-    public Item() {
-        itemName = "";
-        itemQuantity = 0;
-        itemValue = 0;
+    public Item(String itemName, int itemQuantity, int itemValue) {
+        this.itemName = itemName;
+        this.itemQuantity = itemQuantity;
+        this.itemValue = itemValue;
 
     }
 
