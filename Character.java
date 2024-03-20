@@ -1,5 +1,4 @@
 import java.util.Dictionary;
-import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.ArrayList;
 
@@ -27,6 +26,7 @@ public class Character {
     private String status;
     private ArrayList<String> friendList;
     private ArrayList<String> achievements;
+    private ArrayList<Crime> crimeList;
 
 
 
@@ -54,6 +54,7 @@ public class Character {
 
         friendList = new ArrayList<>();
         achievements = new ArrayList<>();
+        crimeList = new ArrayList<>();
 
         level = 1;
         cashMoney = 0;
@@ -255,39 +256,92 @@ public class Character {
         System.out.print("New accessories: " + getAccessories());
     }
 
+    /**
+     * A method to add friend to friends list
+     * @param username
+     */
     public void addFriend(String username) {
         friendList.add(username);
     }
 
+    /**
+     * A method to add a crime to a characters crime list
+     * @param crime
+     */
+    public void addCrime(Crime crime) {
+        crimeList.add(crime);
+    }
+
+    /**
+     * A method to remove a crime from crime list.
+     * @param crime
+     */
+    public void removeCrime(Crime crime) {
+        if (!crimeList.contains(crime)) {
+            System.out.println("This crime is not within the list.");
+        }
+        else {
+            crimeList.remove(crime);
+        }
+    }
+
+    /**
+     * A method to remove a friend from friends list
+     * @param username
+     */
     public void removeFriend(String username) {
         if (!friendList.contains(username)) {
             System.out.println("The user: " + username + " is not in your friends list.");
         }
         else {
-            friendList.add(username);
+            friendList.remove(username);
             System.out.println(username + " successfully added.");
         }
     }
 
+    /**
+     * A method to display the friends of a character
+     */
     public void displayFriends() {
         for(String friend: friendList) {
             System.out.println(friend);
         }
     }
 
+    /**
+     * A method to view the list of crimes to be completed by a character
+     */
+    public void crimeTracker() {
+        for (Crime crime: crimeList) {
+            crime.display();
+            System.out.println("\n");
+        }
+    }
+
+    /**
+     * A method to add achievements to record
+     * @param achievement
+     */
     public void addAchievements(String achievement) {
         achievements.add(achievement);
     }
 
+    /**
+     * A method to remove an achievement from record
+     * @param achievement
+     */
     public void removeAchievement(String achievement) {
         if(!achievements.contains(achievement)) {
             System.out.println("This achievement is not within your list.");
         }
         else {
-            achievements.add(achievement);
+            achievements.remove(achievement);
         }
     }
 
+    /**
+     * A method to display the profile of a character
+     */
     public void displayProfile() {
         System.out.println("Username: " + userName);
         System.out.println("Cash: " + cashMoney);
@@ -302,6 +356,4 @@ public class Character {
             System.out.println(achievement);
         }
     }
-
-
 }
