@@ -1,6 +1,7 @@
 import java.util.Dictionary;
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.ArrayList;
 
 
 public class Character {
@@ -24,6 +25,8 @@ public class Character {
     private double health;
     private double maxHealth;
     private String status;
+    private ArrayList<String> friendList;
+    private ArrayList<String> achievements;
 
 
 
@@ -48,6 +51,9 @@ public class Character {
             accessories.put("glasses", "sunglasses_1");
             accessories.put("gloves", "bare");
         }
+
+        friendList = new ArrayList<>();
+        achievements = new ArrayList<>();
 
         level = 1;
         cashMoney = 0;
@@ -95,6 +101,14 @@ public class Character {
 
     public Dictionary<String, String> getAccessories() {
         return accessories;
+    }
+
+    public ArrayList<String> getFriendList() {
+        return friendList;
+    }
+
+    public ArrayList<String> getAchievments() {
+        return achievements;
     }
 
     public int getLevel() {
@@ -240,4 +254,54 @@ public class Character {
         accessories.put(type, accessoryID);  // Need to add error catching for inputting keys not within dictionary
         System.out.print("New accessories: " + getAccessories());
     }
+
+    public void addFriend(String username) {
+        friendList.add(username);
+    }
+
+    public void removeFriend(String username) {
+        if (!friendList.contains(username)) {
+            System.out.println("The user: " + username + " is not in your friends list.");
+        }
+        else {
+            friendList.add(username);
+            System.out.println(username + " successfully added.");
+        }
+    }
+
+    public void displayFriends() {
+        for(String friend: friendList) {
+            System.out.println(friend);
+        }
+    }
+
+    public void addAchievements(String achievement) {
+        achievements.add(achievement);
+    }
+
+    public void removeAchievement(String achievement) {
+        if(!achievements.contains(achievement)) {
+            System.out.println("This achievement is not within your list.");
+        }
+        else {
+            achievements.add(achievement);
+        }
+    }
+
+    public void displayProfile() {
+        System.out.println("Username: " + userName);
+        System.out.println("Cash: " + cashMoney);
+        System.out.println("Level: " + level);
+        System.out.println("Status: " + status);
+        System.out.println("Stamina: " + stamina);
+        System.out.println("Nerve: " + nerve);
+        System.out.println("Muscle: " + muscle);
+        System.out.println("Health: " + health);
+        System.out.println("Achievements: ");
+        for (String achievement : achievements) {
+            System.out.println(achievement);
+        }
+    }
+
+
 }
