@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 public class Item {
-    private String itemName;
-    private int itemQuantity;
-    private int itemValue;
+    protected String itemName;
+    protected int itemQuantity;
+    protected int itemValue;
 
     public Item() {
         itemName = "";

@@ -9,7 +9,11 @@
 - [ ] Mission
 - [ ] Mission Tracker
 - [ ] Inventory
-- [X] Item
+- [ ] Item
+    - [ ] Weapon
+    - [ ] Clothing
+    - [ ] Accessory
+    - [ ] Food
 
 # Group Git Workflow Guide
 
