@@ -62,7 +62,7 @@ public class Crime {
      * A method to check if all crimes within an objective have been complete
      * @return
      */
-    public boolean complete() {
+    public boolean complete(String crimeType) {
         return crimesCompleted == crimesRequired;
     }
 
@@ -70,8 +70,8 @@ public class Crime {
      * A method that updates the number of crimes committed, if fully complete
      * display a message that says so.
      */
-    public void updateCrime(){
-        if(complete()) {
+    public void updateCrime(String crimeType){
+        if(complete(crimeType)) {
             System.out.println("Crimes fully completed!");
 
         } else {
@@ -83,13 +83,14 @@ public class Crime {
     /**
      * A method to collect cash rewards if all crimes in an objective are complete
      */
-    public void collectReward() {
-        if (complete()) {
+    public void collectReward(String crimeType) {
+        if (complete(crimeType)) {
             System.out.print("Collect your cash reward of $" +cashReward);
         } else {
             System.out.println("You must commit all crimes before you are able to collect $" + cashReward);
         }
     }
+
 
 
 }
