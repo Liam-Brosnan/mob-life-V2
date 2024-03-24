@@ -104,8 +104,10 @@ public class Character {
         return accessories;
     }
 
-    public ArrayList<String> getFriendList() {
-        return friendList;
+    public void getFriendList() {
+        for(String friend: friendList) {
+            System.out.println(friend);
+        }
     }
 
     public ArrayList<String> getAchievments() {
