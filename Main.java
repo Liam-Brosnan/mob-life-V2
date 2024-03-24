@@ -102,6 +102,32 @@ public class Main {
         }
 
 
+        // Populate friends list
+        System.out.println("We have given you some friends so you don't have to be so lonely, you're welcome.");
+        System.out.println("We will now show you how to message your friends.\n");
+        testCharacter.addFriend("Robert");
+        testCharacter.addFriend("Spence");
+
+        // Message Friends
+        System.out.println("How about we send a quick hello to your close personal friend robert? You don't really have a choice but it's nice to have the illusion");
+
+        do {
+            System.out.println("Now say 'hello robert': \n");
+            String message = myObj.nextLine();
+
+            if (message.equalsIgnoreCase("hello robert")) {
+                System.out.println("Message: " + message + " has been successfully delivered to robert.\n");
+                break;
+            } else {
+                System.out.println("NO! Say 'hello robert', not case sensitive of course.");
+            }
+        } while(true);
+
+        // Show friends list
+        System.out.println("Now here is the pre-populated, definitely not fake friends list.");
+        testCharacter.getFriendList();
+        System.out.println(("A whole two friends.... Someone's popular."));
+
         // Logout
         System.out.println("Now that you are familiar with the game, would you like to logout? Y/N");
         String logoutAnswer = myObj.nextLine();
@@ -114,6 +140,7 @@ public class Main {
         else{
             System.out.println("It's not hard.... 'Y' or 'N'!");
         }
+
 
     }
 }

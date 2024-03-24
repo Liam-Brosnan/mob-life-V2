@@ -7,8 +7,14 @@
     <list default="true" id="257891df-63df-4608-b363-9694f90fc636" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Character.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Character.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Crime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Crime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Inventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "edits",
+    "git-widget-placeholder": "create__messaging",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/emma_/mob-life-V2",
     "node.js.detected.package.eslint": "true",
