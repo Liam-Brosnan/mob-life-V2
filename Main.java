@@ -21,7 +21,7 @@ public class Main {
 
         // Register and create character
         Register registered_user = new Register(username, password);
-        Character test_character = new Character();
+        Character testCharacter = new Character();
 
 
         // Test Log-in
@@ -67,38 +67,53 @@ public class Main {
             // Change hair
             System.out.println("Select hair type.\n");
             String chooseHair = myObj.nextLine();
-            test_character.setHair(chooseHair);
+            testCharacter.setHair(chooseHair);
 
             // Change eyebrows
             System.out.println("Select eyebrow type.\n");
             String chooseEyebrows = myObj.nextLine();
-            test_character.setEyebrows(chooseEyebrows);
+            testCharacter.setEyebrows(chooseEyebrows);
 
             // Change eyes
             System.out.println("Select eye type.\n");
             String chooseEyes = myObj.nextLine();
-            test_character.setEyes(chooseEyes);
+            testCharacter.setEyes(chooseEyes);
 
             // Change nose
             System.out.println("Select nose type.\n");
             String chooseNose = myObj.nextLine();
-            test_character.setNose(chooseNose);
+            testCharacter.setNose(chooseNose);
 
             // Change mouth
             System.out.println("Select mouth type.\n");
             String chooseMouth = myObj.nextLine();
-            test_character.setMouth(chooseMouth);
+            testCharacter.setMouth(chooseMouth);
 
             System.out.println("Your changes have been saved, here they are: ");
-            System.out.println("Hair: " + test_character.getHair());
-            System.out.println("Eyebrows: " + test_character.getEyebrows());
-            System.out.println("Eyes: " + test_character.getEyes());
-            System.out.println("Nose: " + test_character.getNose());
-            System.out.println("Mouth: " + test_character.getMouth() + "\n");
+            System.out.println("Hair: " + testCharacter.getHair());
+            System.out.println("Eyebrows: " + testCharacter.getEyebrows());
+            System.out.println("Eyes: " + testCharacter.getEyes());
+            System.out.println("Nose: " + testCharacter.getNose());
+            System.out.println("Mouth: " + testCharacter.getMouth() + "\n");
 
         }
         else {
             System.out.println("Please enter Y OR N to continue");
         }
+
+
+        // Logout
+        System.out.println("Now that you are familiar with the game, would you like to logout? Y/N");
+        String logoutAnswer = myObj.nextLine();
+        if(logoutAnswer.equalsIgnoreCase("Y")) {
+            System.out.println("We are sad to see you go but glad to watch you walk away... See ya!");
+        }
+        else if(logoutAnswer.equalsIgnoreCase("N")) {
+            System.out.println("Glad to hear you enjoy our game so much that you don't want to leave. maybe you'll never leave.....");
+        }
+        else{
+            System.out.println("It's not hard.... 'Y' or 'N'!");
+        }
+
     }
 }
