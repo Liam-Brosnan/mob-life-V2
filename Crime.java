@@ -1,3 +1,6 @@
+/**
+ * A class that stores information about crimes and progression.
+ */
 public class Crime {
     private String crimeType;
     private int crimesCompleted;
@@ -10,6 +13,8 @@ public class Crime {
         crimesRequired = 0;
         cashReward = 0;
     }
+
+    // Getters
     public String getCrimeType(){
         return crimeType;
     }
@@ -26,6 +31,7 @@ public class Crime {
         return cashReward;
     }
 
+    // Setters
     public void setCrimeType(String crimeType){
         this.crimeType = crimeType;
     }
@@ -42,6 +48,9 @@ public class Crime {
         this.cashReward = cashReward;
     }
 
+    /**
+     * A method to display crime progression.
+     */
     public void display() {
         System.out.println("Type of crime:" +crimeType);
         System.out.println("Number of crimes completed:" +crimesCompleted);
@@ -49,9 +58,18 @@ public class Crime {
         System.out.println("Cash rewards:"+cashReward);
     }
 
+    /**
+     * A method to check if all crimes within an objective have been complete
+     * @return
+     */
     public boolean complete() {
         return crimesCompleted == crimesRequired;
     }
+
+    /**
+     * A method that updates the number of crimes committed, if fully complete
+     * display a message that says so.
+     */
     public void updateCrime(){
         if(complete()) {
             System.out.println("Crimes fully completed!");
@@ -62,6 +80,9 @@ public class Crime {
         }
     }
 
+    /**
+     * A method to collect cash rewards if all crimes in an objective are complete
+     */
     public void collectReward() {
         if (complete()) {
             System.out.print("Collect your cash reward of $" +cashReward);

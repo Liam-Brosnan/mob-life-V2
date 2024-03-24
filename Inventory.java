@@ -1,5 +1,8 @@
-import java.util.List;
 import java.util.ArrayList;
+
+/**
+ * A class that manages a list of items belonging to a character
+ */
 public class Inventory {
     private ArrayList <Item> itemCatalogue ;
     private Character money;
@@ -10,6 +13,8 @@ public class Inventory {
         this.money = money;
 
     }
+
+    // Getters
     public ArrayList<Item> getItemCatalogue() {
         return itemCatalogue;
     }
@@ -18,11 +23,18 @@ public class Inventory {
         return money;
     }
 
+    /**
+     * A method to display the list of items within a characters inventory
+     */
     public void displayInventory() {
         for (Item items : itemCatalogue) {
             items.itemDisplay();
         }}
 
+    /**
+     * A method to remove items from inventory list
+     * @param item
+     */
     public void removeItem (Item item) {
         if (itemCatalogue.contains(item)) {
             itemCatalogue.remove(item);
@@ -31,6 +43,11 @@ public class Inventory {
             System.out.println("Item not in your inventory.");
         }
     }
+
+    /**
+     * A method to add an item to inventory list
+     * @param item
+     */
     public void addItem (Item item) {
         if (itemCatalogue.contains(item)) {
             System.out.println("Item already in inventory");
@@ -39,20 +56,24 @@ public class Inventory {
             itemCatalogue.add(item);
             System.out.println("Item added to inventory");
         }}
-    public void sellItem(Item item, Character money, double counter) {
-        counter = 0.0;
+
+    /**
+     * A method to sell an item from inventory list.
+     *
+     * @param item
+     * @param money
+     */
+    public void sellItem(Item item, Character money) {
+        double counter = 0.0;
         if (itemCatalogue.contains(item) && item.getItemValue() > 0){
             itemCatalogue.remove(item);
             counter += item.getItemValue();
             System.out.println("Item" +item.getItemName()+ "sold for:" +item.getItemValue());
             System.out.print("");
-            System.out.println("You now have: $" +counter);
+            System.out.println("You now have: $" + counter);
         } else {
             System.out.println("Item" + item.getItemName()+"is not in your inventory!");
         }}
-
-
-
 
 }
 
