@@ -1,3 +1,6 @@
+/**
+ * A class which stores information about a given item.
+ */
 public class Item {
     protected String itemName;
     protected int itemQuantity;
@@ -10,6 +13,7 @@ public class Item {
 
     }
 
+    // Getters
     public String getItemName() {
         return itemName;
     }
@@ -22,6 +26,7 @@ public class Item {
         return itemValue;
     }
 
+    // Setters
     public void setItemName(String itemName) {
         this.itemName = itemName;
     }
@@ -34,6 +39,9 @@ public class Item {
         this.itemValue = itemValue;
     }
 
+    /**
+     * A method to display item information
+     */
     public void itemDisplay() {
         System.out.println("Item:" +itemName);
         System.out.println("Quantity:" +itemQuantity);
