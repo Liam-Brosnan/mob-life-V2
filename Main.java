@@ -40,7 +40,7 @@ public class Main {
                 break;
             }
 
-            else if(loginUsername.toLowerCase().equals("help") || loginPassword.toLowerCase().equals("help")) {
+            else if(loginUsername.equalsIgnoreCase("help") || loginPassword.equalsIgnoreCase("help")) {
                 System.out.println("Username: " + registered_user.getUsername());
                 System.out.println("Password: " + registered_user.getPassword());
             }
@@ -58,10 +58,10 @@ public class Main {
         System.out.println("Would you like to edit your character? Y/N");
 
         String response = myObj.nextLine();
-        if(response.toUpperCase().equals("N")) {
+        if(response.equalsIgnoreCase("N")) {
             System.out.println("Okay, lets move on.");
         }
-        else if(response.toUpperCase().equals("Y")) {
+        else if(response.equalsIgnoreCase("Y")) {
             System.out.println("Okay, let's begin.\n");
 
             // Change hair
