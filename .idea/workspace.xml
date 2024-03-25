@@ -4,20 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="257891df-63df-4608-b363-9694f90fc636" name="Changes" comment="">
+    <list default="true" id="5ab92b17-90b0-4a96-be4c-34b09a40b1cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Character.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Crime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Inventory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Register.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Weapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/mob-life-V2.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,23 +61,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "comments",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/liam/Documents/uni/Semester 2/CS991/Group Coursework/mob-life-V2",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "git-widget-placeholder": "Merging comments"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -75,7 +80,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710938954844</updated>
+      <workItem from="1711313281658" duration="1665000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

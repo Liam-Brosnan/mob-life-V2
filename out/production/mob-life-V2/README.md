@@ -1,7 +1,16 @@
 # mob-life-V2
 # Java Classes
 
-- [ ] Main
+- [o] Main
+    - [o] use cases:
+        - [X] Login
+        - [X] Register
+        - [X] create avatar
+        - [X] edit avatar
+        - [ ] logout - jonathan
+        - [ ] crime - liam
+        - [ ] manage Inventory
+        - [ ] chat room
 - [X] Register
 - [X] Login
     - [X] Update error messages
