@@ -1,4 +1,4 @@
-import java.util.Locale;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -18,7 +18,6 @@ public class Main {
         String password = myObj.nextLine();
 
 
-
         // Register and create character
         Register registered_user = new Register(username, password);
         Character testCharacter = new Character();
@@ -28,40 +27,34 @@ public class Main {
         System.out.println("Okay, lets test a log in, I hope you remembered your details. If you can't remember type 'help' and we will give you your details.");
         System.out.println("Now enter your username and password:  ");
 
-        do{
+        do {
             System.out.println("Username: \n");
             String loginUsername = myObj.nextLine();
 
             System.out.println("Password: \n");
             String loginPassword = myObj.nextLine();
 
-            if(loginUsername.equals(registered_user.getUsername()) && loginPassword.equals(registered_user.getPassword())) {
+            if (loginUsername.equals(registered_user.getUsername()) && loginPassword.equals(registered_user.getPassword())) {
                 System.out.println("Login successful");
                 break;
-            }
-
-            else if(loginUsername.equalsIgnoreCase("help") || loginPassword.equalsIgnoreCase("help")) {
+            } else if (loginUsername.equalsIgnoreCase("help") || loginPassword.equalsIgnoreCase("help")) {
                 System.out.println("Username: " + registered_user.getUsername());
                 System.out.println("Password: " + registered_user.getPassword());
-            }
-
-            else if(!loginUsername.equals(registered_user.getUsername()) || !loginPassword.equals(registered_user.getPassword())) {
+            } else if (!loginUsername.equals(registered_user.getUsername()) || !loginPassword.equals(registered_user.getPassword())) {
                 System.out.println("Username or password incorrect");
             }
 
 
-        } while(true);
-
+        } while (true);
 
 
         // Ask for character customization
         System.out.println("Would you like to edit your character? Y/N");
 
         String response = myObj.nextLine();
-        if(response.equalsIgnoreCase("N")) {
+        if (response.equalsIgnoreCase("N")) {
             System.out.println("Okay, lets move on.");
-        }
-        else if(response.equalsIgnoreCase("Y")) {
+        } else if (response.equalsIgnoreCase("Y")) {
             System.out.println("Okay, let's begin.\n");
 
             // Change hair
@@ -96,8 +89,7 @@ public class Main {
             System.out.println("Nose: " + testCharacter.getNose());
             System.out.println("Mouth: " + testCharacter.getMouth() + "\n");
 
-        }
-        else {
+        } else {
             System.out.println("Please enter Y OR N to continue");
         }
 
@@ -121,26 +113,47 @@ public class Main {
             } else {
                 System.out.println("NO! Say 'hello robert', not case sensitive of course.");
             }
-        } while(true);
+        } while (true);
 
         // Show friends list
         System.out.println("Now here is the pre-populated, definitely not fake friends list.");
         testCharacter.getFriendList();
         System.out.println(("A whole two friends.... Someone's popular."));
 
+        // crime use case
+        System.out.println("Would you like to commit a crime?");
+        String crimeResponse = myObj.nextLine();
+
+        if (crimeResponse.equalsIgnoreCase("N")) {
+            System.out.println("Ok, lets move on.");
+        } else if (crimeResponse.equalsIgnoreCase("Y")) {
+            Crime newCrime = new Crime();
+            System.out.println("Select crime: \n");
+            System.out.println(("1: Sell 200g of Cocaine. \n"));
+
+            String chooseCrime = myObj.nextLine();
+
+            if (chooseCrime.equals("1")) {
+                newCrime.setCrimeType(chooseCrime);
+                newCrime.setCrimesRequired(1);
+                newCrime.setCashReward(200);
+                System.out.println("Completing Crime...");
+                System.out.println("Crime Completed!");
+                testCharacter.setCashMoney(200);
+                System.out.println("Character cash: " + testCharacter.getCashMoney());
+            } else {
+                System.out.print("Okay, lets move on.");
+            }
+        }
         // Logout
         System.out.println("Now that you are familiar with the game, would you like to logout? Y/N");
         String logoutAnswer = myObj.nextLine();
-        if(logoutAnswer.equalsIgnoreCase("Y")) {
+        if (logoutAnswer.equalsIgnoreCase("Y")) {
             System.out.println("We are sad to see you go but glad to watch you walk away... See ya!");
-        }
-        else if(logoutAnswer.equalsIgnoreCase("N")) {
+        } else if (logoutAnswer.equalsIgnoreCase("N")) {
             System.out.println("Glad to hear you enjoy our game so much that you don't want to leave. maybe you'll never leave.....");
-        }
-        else{
+        } else {
             System.out.println("It's not hard.... 'Y' or 'N'!");
         }
-
-
     }
 }
