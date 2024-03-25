@@ -1,4 +1,7 @@
-
+/**
+ * A class to register a new user.
+ *
+ */
 public class Register {
     private String username;
     private String password;
@@ -8,6 +11,7 @@ public class Register {
         this.password = password;
     }
 
+    //Getters
     public String getUsername() {
         return username;
     }
@@ -16,6 +20,7 @@ public class Register {
         return password;
     }
 
+    //Setters
     public void setUsername(String username) {
         this.username = username;
     }

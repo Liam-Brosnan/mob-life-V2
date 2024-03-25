@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -43,8 +44,6 @@ public class Main {
             } else if (!loginUsername.equals(registered_user.getUsername()) || !loginPassword.equals(registered_user.getPassword())) {
                 System.out.println("Username or password incorrect");
             }
-
-
         } while (true);
 
 
@@ -119,6 +118,7 @@ public class Main {
         System.out.println("Now here is the pre-populated, definitely not fake friends list.");
         testCharacter.getFriendList();
         System.out.println(("A whole two friends.... Someone's popular."));
+
 
         // crime use case
         System.out.println("Would you like to commit a crime?");

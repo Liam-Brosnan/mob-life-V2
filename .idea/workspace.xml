@@ -4,21 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="257891df-63df-4608-b363-9694f90fc636" name="Changes" comment="">
+    <list default="true" id="5ab92b17-90b0-4a96-be4c-34b09a40b1cb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Character.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Character.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Crime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Crime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mob-life-V2/README.md" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
->>>>>>> crime-use-case
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Character.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Crime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Inventory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Register.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/Weapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mob-life-V2/mob-life-V2.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,28 +61,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-<<<<<<< HEAD
-    "git-widget-placeholder": "create__messaging",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/emma_/mob-life-V2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
-=======
-    "git-widget-placeholder": "crime-use-case",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/liam/Documents/uni/Semester 2/CS991/Group Coursework/mob-life-V2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
->>>>>>> crime-use-case
+    "git-widget-placeholder": "Merging comments"
   }
 }]]></component>
   <component name="SharedIndexes">

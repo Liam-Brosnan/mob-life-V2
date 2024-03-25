@@ -1,5 +1,8 @@
 import java.util.Objects;
 
+/**
+ * A class which stores a users login information.
+ */
 public class Login {
     private String username;
     private String password;
@@ -10,6 +13,7 @@ public class Login {
         this.password = password;
     }
 
+    //Getters
     public String getUsername() {
         return username;
     }
@@ -22,6 +26,7 @@ public class Login {
         return loginInfo;
     }
 
+    //Setters
     public void setUsername(String username) {
         this.username = username;
     }
@@ -30,6 +35,10 @@ public class Login {
         this.password = password;
     }
 
+    /**
+     * A method to determine if login was successful.
+     *
+     */
     public boolean validateLogin() {
         return Objects.equals(loginInfo.getUsername(), username) && Objects.equals(loginInfo.getPassword(), password);
     }

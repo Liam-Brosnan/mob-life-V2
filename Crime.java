@@ -1,3 +1,4 @@
+
 /**
  * A class that stores information about crimes and progression.
  */
@@ -60,7 +61,6 @@ public class Crime {
 
     /**
      * A method to check if all crimes within an objective have been complete
-     * @return
      */
     public boolean complete(String crimeType) {
         return crimesCompleted == crimesRequired;
@@ -90,7 +90,4 @@ public class Crime {
             System.out.println("You must commit all crimes before you are able to collect $" + cashReward);
         }
     }
-
-
-
 }
