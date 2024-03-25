@@ -1,4 +1,4 @@
-import java.util.Locale;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -100,5 +100,33 @@ public class Main {
         else {
             System.out.println("Please enter Y OR N to continue");
         }
+
+        // crime use case
+        System.out.println("Would you like to commit a crime?");
+        String crimeResponse = myObj.nextLine();
+
+        if (crimeResponse.equalsIgnoreCase("N")) {
+            System.out.println("Ok, lets move on.");
+        }
+        else if (crimeResponse.equalsIgnoreCase("Y")) {
+            Crime newCrime = new Crime();
+            System.out.println("Select crime: \n");
+            System.out.println(("1: Sell 200g of Cocaine. \n"));
+
+            String chooseCrime = myObj.nextLine();
+
+            if (chooseCrime.equals("1")) {
+                newCrime.setCrimeType(chooseCrime);
+                newCrime.setCrimesRequired(1);
+                newCrime.setCashReward(200);
+                System.out.println("Completing Crime...");
+                System.out.println("Crime Completed!");
+                test_character.setCashMoney(200);
+                System.out.println("Character cash: " + test_character.getCashMoney());
+        }
+            else {
+                System.out.print("Okay, lets move on.");
+            }
+    }
     }
 }
