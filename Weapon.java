@@ -1,3 +1,8 @@
+/**
+ * A Class to store information of the Weapon Item.
+ *
+ */
+
 public class Weapon extends Item {
     protected int ammo;
     protected int damage;
@@ -13,6 +18,7 @@ public class Weapon extends Item {
         this.damage = damage;
     }
 
+    //Getters and setters
     public int getAmmo() {
         return ammo;
     }

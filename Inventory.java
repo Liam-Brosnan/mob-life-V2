@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 /**
@@ -64,16 +65,17 @@ public class Inventory {
      * @param money
      */
     public void sellItem(Item item, Character money) {
-        double counter = 0.0;
+        double itemValue = item.getItemValue();
+        double  cash = money.getCashMoney();
         if (itemCatalogue.contains(item) && item.getItemValue() > 0){
             itemCatalogue.remove(item);
-            counter += item.getItemValue();
+            cash += itemValue;
             System.out.println("Item" +item.getItemName()+ "sold for:" +item.getItemValue());
-            System.out.print("");
-            System.out.println("You now have: $" + counter);
+            System.out.println("You now have: $" +cash);
         } else {
             System.out.println("Item" + item.getItemName()+"is not in your inventory!");
         }}
+
 
 }
 

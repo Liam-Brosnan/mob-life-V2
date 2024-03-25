@@ -1,7 +1,9 @@
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.ArrayList;
-
+/**
+ * A class which stores information about a character.
+ */
 
 public class Character {
     private String userName;
